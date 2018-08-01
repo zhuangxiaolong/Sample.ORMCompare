@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "tMusic";
+}
+<H1>尝试 @ViewData["tryNum"]次</H1>
+<H2>Dapper加载速度</H2>
+<p>
+    开始加载时间
+    @ViewData["startTime_dapper"]
+</p>
+<p>
+    完成加载时间
+    @ViewData["endTime_dapper"]
+</p>
+<p>
+    花费时间
+    @ViewData["spentTime_dapper"]
+</p>
+<p>
+    数据条目
+    @ViewData["dataNum_dapper"]
+</p>
+
+<H2>Ado.net加载速度</H2>
+<p>
+    开始加载时间
+    @ViewData["startTime_adonet"]
+</p>
+<p>
+    完成加载时间
+    @ViewData["endTime_adonet"]
+</p>
+<p>
+    花费时间
+    @ViewData["spentTime_adonet"]
+</p>
+<p>
+    数据条目
+    @ViewData["dataNum_adonet"]
+</p>
+<H2>EF加载速度</H2>
+<p>
+    开始加载时间
+    @ViewData["startTime_ef"]
+</p>
+<p>
+    完成加载时间
+    @ViewData["endTime_ef"]
+</p>
+<p>
+    花费时间
+    @ViewData["spentTime_ef"]
+</p>
+<p>
+    数据条目
+    @ViewData["dataNum_ef"]
+</p>
+@Html.ActionLink("跳转", "Contact", "Home", null)
